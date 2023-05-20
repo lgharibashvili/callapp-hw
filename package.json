@@ -1,0 +1,14 @@
+{
+  "name": "callapp-hw",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:back": "npm run dev -w=back",
+    "dev:front": "npm run dev -w=front",
+    "dev": "concurrently \"npm run dev:back\" \"npm run dev:front\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "workspaces": ["back", "front"]
+}

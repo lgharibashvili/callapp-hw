@@ -1,0 +1,16 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@keyframes flicker {
+    0% {
+        background: #57C5B6;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
+.pending {
+    animation: flicker 1s ease-in-out;
+}
