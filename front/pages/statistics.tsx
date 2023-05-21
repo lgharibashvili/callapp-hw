@@ -1,9 +1,7 @@
-import useCustomers from "@/hooks/useCustomers";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 // necessary due to bug in ant-design/plots which makes it incompatible with SSR
-//@ts-ignore
-const Pie = dynamic(() => import('@ant-design/plots').then(({ Pie }) => Pie), { ssr: false, });
+const Pie = dynamic<any>(() => import('@ant-design/plots').then(({ Pie }) => Pie), { ssr: false, });
 import useCityStatistic from "@/hooks/useCityStatistic";
 
 export default function Statistics() {
