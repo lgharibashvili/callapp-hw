@@ -14,3 +14,11 @@
 .pending {
     animation: flicker 1s ease-in-out;
 }
+
+a {
+    color: #EEEEEE;
+}
+
+a:hover {
+    color: white;
+}

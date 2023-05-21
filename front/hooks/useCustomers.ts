@@ -1,4 +1,4 @@
-import { Customer } from "@/client/getCustomers";
+import { Customer } from "@/client/types";
 import { filterEntries, mapEntries } from "@/utils";
 import { useEffect } from "react";
 import useCustomerStore from "./useCustomerStore";
